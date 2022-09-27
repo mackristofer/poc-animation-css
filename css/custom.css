@@ -1,0 +1,206 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: #555;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+
+.nav-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-container li {
+  float: right;
+}
+
+.nav-container li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+.carousel-container {
+  height: 400px;
+}
+
+.carousel-container > img {
+  opacity: 0;
+  color: transparent;
+  animation: fade-carousel 16s linear infinite;
+  position: absolute;
+  width: 100%;
+}
+
+.carousel-container > img:nth-child(2) {
+  animation-delay: 4s;
+}
+.carousel-container > img:nth-child(3) {
+  animation-delay: 8s;
+}
+.carousel-container > img:nth-child(4) {
+  animation-delay: 12s;
+}
+.carousel-container > img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.sobre-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.card-sobre {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.card-sobre h1 {
+  text-align: center;
+  padding-top: 10px;
+  color: blue;
+}
+
+.card-sobre img {
+  width: 300px;
+  height: 200px;
+}
+
+.card-item {
+  width: 33%;
+}
+
+.card-item p {
+  font-size: 14px;
+  padding: 10px 50px;
+  line-height: 1.4;
+}
+
+.servicos-container {
+  height: 500px;
+  background-image: url("/img/network.png");
+  background-size: 100%;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.servicos-container img {
+  padding: 30px 0;
+  width: 80px;
+  height: 80px;
+}
+
+.servicos-container h1 {
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+.servicos-container button {
+  padding: 15px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border-radius: 4px;
+}
+
+.servicos-container button:hover {
+  color: blue;
+  background: #e9ecef;
+  cursor: pointer;
+}
+
+.tecnologias-container {
+  background: #e9ecef;
+}
+
+.icons-tecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.icons-tecnologias img {
+  width: 110px;
+  height: 110px;
+  opacity: 0.2;
+}
+
+.local-container {
+}
+
+.rodape-cotainer {
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  background: #555;
+  color: white;
+}
+
+.rodape-container-contato {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fade-tec-icon:hover {
+  animation-name: fade-tec-icon;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-tec-icon {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-carousel {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  8% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  17% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
