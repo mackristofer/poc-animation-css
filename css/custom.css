@@ -14,7 +14,7 @@
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: right;
   height: 80px;
   position: -webkit-sticky;
   position: sticky;
@@ -25,9 +25,6 @@
 
 .nav-container ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .nav-container li {
